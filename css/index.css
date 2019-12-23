@@ -1,0 +1,46 @@
+
+body{
+	height:100vh;
+}
+h1{
+	font-size: 40px;
+}
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.topHeader{
+	margin:0;
+	text-align: center;
+	height: 18%;
+}
+.variants{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.attractor,.poincare{
+	height: 70px;
+	width:400px;
+	background: #bcbcbc;
+	border-radius: 30px;
+	text-align: center;
+	display: flex;
+}
+
+.attractor span,.poincare span{
+	color:black;
+	margin-top: 10px;
+	width: 100%;
+	font-size: 40px;
+}
+
+a{
+	color:black;
+	text-decoration: none;
+}
+a:hover{
+	color:black;
+	text-decoration: none;
+}

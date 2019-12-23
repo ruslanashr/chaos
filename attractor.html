@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Generator–Piezoceramic Transduser System with flot.js</title>
+    <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="../excanvas.min.js"></script><![endif]-->
+    <link rel="stylesheet" href="jquery-ui/css/ui-lightness/jquery-ui-1.9.2.custom.min.css" />
+    <link rel="stylesheet" href="./css/attractor.css" />
+    <link rel="stylesheet" href="./css/my.css" />
+    <script language="javascript" type="text/javascript" src="./flot/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="./flot/jquery.flot.js"></script>
+    <script src="jquery-ui/js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script data-main="js/attractor" src="js/require.js"></script>
+ </head>
+    <body>
+    <div id="wrapper">
+      <div id="column1">
+        <a href="./index.html" class="back"><span class="zaback"><img src="https://cdn2.iconfinder.com/data/icons/pittogrammi/142/27-512.png" height="20px" width="20px"><span>BACK</span></span></a>
+        <h2 class="topHeader">Generator–Piezoceramic Transduser System with flot.js.</h2>
+        <div id="chartWrapper"><div id="chart"></div></div>
+      </div>
+      <div id="column2">
+        <div class="topHeader"><h2>Initial parameters to the Generator–Piezoceramic Transduser System</h2></div>
+        <div class="row">
+          <div class="sliderText">ξ: <input id="xi" type="text" class="sliderInput"></div>
+          <div id="xiSlider" class="slider"></div>
+        </div>
+        <div class="row">
+          <div class="sliderText">ζ: <input id="dzeta" type="text" class="sliderInput"></div>
+          <div id="dzetaSlider" class="slider"></div>
+        </div>
+        <div class="row">
+          <div class="sliderText">β: <input id="beta" type="text" class="sliderInput"></div>
+          <div id="betaSlider" class="slider"></div>
+        </div>
+        <div class="row">
+          <div class="sliderText">ɣ: <input id="gamma" type="text" class="sliderInput"></div>
+          <div id="gammaSlider" class="slider"></div>
+        </div>
+        <div class="row">
+          <div class="sliderText">dt: <input id="dt" type="text" class="sliderInput"></div>
+          <div id="dtSlider" class="slider"></div>
+        </div>
+        <div class="topHeader"><h2>Parameters to the Generator–Piezoceramic Transduser System</h2></div>
+        <div class="row">
+          <div class="sliderText">α<sub>0</sub>: <input id="alpha0" type="text" class="sliderInput"></div>
+          <div id="alpha0Slider" class="slider"></div>
+        </div>
+        <div class="row">
+          <div class="sliderText">α<sub>1</sub>: <input id="alpha1" type="text" class="sliderInput"></div>
+          <div id="alpha1Slider" class="slider"></div>
+        </div>
+        <div class="row">
+          <div class="sliderText">α<sub>2</sub>: <input id="alpha2" type="text" class="sliderInput"></div>
+          <div id="alpha2Slider" class="slider"></div>
+        </div>
+        <div class="row">
+          <div class="sliderText">α<sub>3</sub>: <input id="alpha3" type="text" class="sliderInput"></div>
+          <div id="alpha3Slider" class="slider"></div>
+        </div>
+        <div class="row">
+          <div class="sliderText">α<sub>4</sub>: <input id="alpha4" type="text" class="sliderInput"></div>
+          <div id="alpha4Slider" class="slider"></div>
+        </div>
+        <div class="row">
+          <div class="sliderText">α<sub>5</sub>: <input id="alpha5" type="text" class="sliderInput"></div>
+          <div id="alpha5Slider" class="slider"></div>
+        </div>
+        <div class="row">
+          <div class="sliderText">α<sub>6</sub>: <input id="alpha6" type="text" class="sliderInput"></div>
+          <div id="alpha6Slider" class="slider"></div>
+        </div>
+        <div class="row">
+          <div class="sliderText">α<sub>7</sub>: <input id="alpha7" type="text" class="sliderInput"></div>
+          <div id="alpha7Slider" class="slider"></div>
+        </div>
+        <div class="topHeader"><h2>Visible interval of steps</h2></div>
+        <div class="row">
+          <p>From: <input id="fromSeries" type="text" class="left"> To: <input id="toSeries" type="text" class="left"></p>
+        </div>
+        <div class="table-container">
+              <div></div>
+              <table cellspacing="0">
+                <thead>
+                  <tr>
+                    <th><div>Step</div></th>
+                    <th><div>ξ</div></th>
+                    <th><div>β</div></th>
+                    <th><div>ɣ</div></th>
+                  </tr>
+                </thead>
+                <tbody id="for_dots">
+                </tbody>
+              </table>
+        </div>
+        <div class="row">
+          <p>
+            <button id="restart" type="button">Restart</button> 
+            <button id="resetParms" type="button">Reset Parameters</button>
+            <button id="pause" type="text">Pause</button>
+            <button id="resetAxes" type="button">Reset Axes</button>
+          </p>
+        </div>
+        <div class="row">
+          <h2>Other controls</h2>
+        </div>
+        <div class="row">
+          <div class="sliderText">zoom: <input id="zoom" type="text" class="sliderInput"></div>
+          <div id="zoomSlider" class="slider"></div>
+        </div>
+        <div class="row">
+          <p>Refresh period (ms): <input id="updateInterval" type="text" class="right"></p>
+        </div>
+        <div class="row">
+          <p>To rotate the plot in 3D space, just drag or Shift + drag on the chart grid. Press 'Reset Axes' to reset.</p>
+          <p>If you pause the plot, then change the parameter sliders, the plot is redrawn from the start in real time.</p>
+          <p>For background on the equations, see <a href="http://www.mathnet.ru/links/fcb6f1ebf1aba34323a6d00af535777a/nd154.pdf">link</a>.</p>
+      </div>
+    </div>
+ </body>
+</html>

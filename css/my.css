@@ -1,0 +1,92 @@
+.table-container {
+  border: 1px solid #963;
+  display: inline-block;
+  height: 150px;
+  padding-top: 1.875em;
+  position: relative;
+}
+.table-container > div {
+  border-color: #888;
+  border-style: solid;
+  border-width: 1px 1px 2px 1px;
+  height: 1.7em;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.table-container table {
+  display: block;
+  height: 150px;
+  overflow-y: auto;
+}
+.table-container th {
+  padding: 0 5px;
+  text-align: center;
+  font-size:14px;
+}
+.table-container th:first-child > div {
+  border-left: none;
+  padding-left: 7px;
+}
+.table-container th > div {
+  border-left: 2px solid #888;
+  line-height: 1.875em;
+  margin-left: -6px;
+  padding-left: 5px;
+  position: absolute;
+  top: 0;
+  font-size:14px;
+}
+.table-container td {
+  border-color: #888;
+  border-style: solid;
+  border-width: 0 1px 2px 1px;
+  padding: 5px;
+  font-size:14px;
+}
+#column1 .topHeader{
+          margin-top:5px !important;
+          height: 5% !important;
+}
+.zaback {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 100px;
+    height: 32px;
+    align-items: center;
+    display: flex;
+    background: #bcbcbc;
+    border-radius: 30px;
+    -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    z-index:999999999999;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    /*Best for Internet Explorer 8 */
+    filter: alpha(opacity=70);
+    /*Internet Explorer 5, 6, 7, 8 */
+    -moz-opacity: 0.7;
+    /* Old Mozilla Browsers */
+    -webkit-opacity: 0.7;
+    /* Old Webkit browsers (Safari, Chrome, various others) */
+    -khtml-opacity: 0.7;
+    /* Really old Safari browsers and Konqueror */
+    opacity: 0.7;
+}
+a.back{
+  color:black;
+  text-decoration:none;
+}
+.zaback span {
+    color:black;
+    text-decoration:none;
+}
+.zaback span:hover {
+    text-decoration:none;
+    color:black;
+}
+.zaback img {
+    margin-left: 5px;
+    margin-right: 10px;
+}
